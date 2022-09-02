@@ -5,7 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="doctor" class="demo.Doctor"></bean>
+    <bean id="doctor" class="demo.Doctor">
+      <constructor-arg value="MBBS"></constructor-arg>
+    </bean>
+
     <bean id="nurse" class="demo.Nurse"></bean>
 
 </beans>
